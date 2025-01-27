@@ -1,7 +1,7 @@
 ,codigo,proveedor,descripcion,cantidad,costo,venta,estado
-0,2,donsendo s.a,alaris,0,2621.0,3276.25,agotado
-1,4,donsendo s.a,trapiche ,0,300.0,800.0,agotado
-2,5,donsendo s.a,origen ,0,3685.0,4606.25,agotado
+0,2,donsendo s.a,alaris,2,2621.0,3276.25,disponible
+1,4,donsendo s.a,trapiche ,2,300.0,800.0,disponible
+2,5,donsendo s.a,origen ,2,3685.0,4606.25,disponible
 3,6,donsendo s.a,finca las moras,9,2620.0,3275.0,disponible
 4,7,donsendo s.a,smirnof,10,5961.0,7451.25,disponible
 5,8,donsendo s.a,gordon,11,9165.0,11456.25,disponible
