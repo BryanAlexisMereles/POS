@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 from datetime import date
-import seaborn as sns
-import matplotlib.pyplot as plt
 import login
 
 # Rutas de los archivos
@@ -107,27 +105,6 @@ def balance():
     st.metric("Perdida", f"${perdidas:,.2f}")
     st.metric("Balance", f"${ventas - costo+ perdidas:,.2f}")
 
-# Función para generar gráficos
-def generar_graficos():
-    historial = st.session_state["historial"]
-    ventas = historial[historial["movimiento"] == "venta"]
-
-    if ventas.empty:
-        st.warning("No hay ventas registradas para mostrar gráficos.")
-        return
-
-    st.subheader("Distribución de ventas por vendedor")
-    frecs = ventas["vendedor"].value_counts(normalize=True) * 100
-    if not frecs.empty:
-        fig, ax = plt.subplots()
-        ax.pie(frecs, labels=frecs.index, autopct="%1.1f%%")
-        ax.set_title("Distribución de ventas por vendedor")
-        st.pyplot(fig)
-
-    st.subheader("Productos más vendidos")
-    frecs_prod = ventas["concepto"].value_counts(normalize=True) * 100
-    if not frecs_prod.empty:
-        st.bar_chart(frecs_prod)
 
 # Interfaz principal
 st.title("Historial de Movimientos")
@@ -152,7 +129,5 @@ else:
     st.warning("No hay productos agotados registrados.")
 
 with st.sidebar:
-    if st.button("Generar gráficos"):
-        generar_graficos()
     if st.button("Mostrar balance"):
         balance()
