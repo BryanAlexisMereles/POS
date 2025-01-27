@@ -1,0 +1,41 @@
+,codigo,proveedor,descripcion,cantidad,costo,venta,estado
+0,2,donsendo s.a,alaris,0,2621.0,3276.25,agotado
+1,4,donsendo s.a,trapiche ,0,300.0,800.0,agotado
+2,5,donsendo s.a,origen ,0,3685.0,4606.25,agotado
+3,6,donsendo s.a,finca las moras,9,2620.0,3275.0,disponible
+4,7,donsendo s.a,smirnof,10,5961.0,7451.25,disponible
+5,8,donsendo s.a,gordon,11,9165.0,11456.25,disponible
+6,9,donsendo s.a,white horse,12,10012.0,12515.0,disponible
+7,10,cgr distribuciones,vino c. lopez,13,7150.0,8937.5,disponible
+8,11,cgr distribuciones,cheteviux viend,14,6240.0,7800.0,disponible
+9,12,cgr distribuciones,v. otro loco +,15,3125.0,3906.25,disponible
+10,13,cgr distribuciones,v. lopez mal.,16,3400.0,4250.0,disponible
+11,14,cgr distribuciones,lopez sauving,17,3800.0,4750.0,disponible
+12,15,cgr distribuciones,golden goy.,18,1375.0,1718.75,disponible
+13,16,cgr distribuciones,blonde ale,19,1375.0,1718.75,disponible
+14,17,cgr distribuciones,scotish ,20,1375.0,1718.75,disponible
+15,18,cgr distribuciones,porter,21,1375.0,1718.75,disponible
+16,19,jotabe,licor café borge.,22,10969.0,13711.25,disponible
+17,20,jotabe,aper carpano r.,23,5090.0,6362.5,disponible
+18,21,jotabe,fernet x750cc,24,9420.0,11775.0,disponible
+19,22,jotabe,fernet m. x750cc,25,10021.0,12526.25,disponible
+20,23,jotabe,v. sern. wild ver.,26,5935.0,7418.75,disponible
+21,24,jotabe,v.sern. sweet ap.,27,5935.0,7418.75,disponible
+22,25,jotabe,gin spir. blu,28,12684.0,15855.0,disponible
+23,26,rap,fernet b. x750cc,29,9079.0,11348.75,disponible
+24,27,rap,fernetb. x450cc,30,6010.0,7512.5,disponible
+25,28,rap,v. gran flia mc,31,15920.0,19900.0,disponible
+26,29,rap,v.flia red blend,32,5374.0,6717.5,disponible
+27,30,rap,v. b.p.co. cab. sua,33,3130.0,3912.5,disponible
+28,31,rap,v. f. ls pri. mc.,34,4177.0,5221.25,disponible
+29,32,rap,v. f. ls pr. cab.sua,35,4177.0,5221.25,disponible
+30,33,rap,v. b. pr. cab. sua,36,3130.0,3912.5,disponible
+31,34,rap,v. flia malbec,5,7575.0,9468.75,disponible
+32,35,rap,v. flia cab sua,3,7575.0,9468.75,disponible
+33,36,rap,v. flia chardo.,3,7575.0,9468.75,disponible
+34,37,rap,v. e. b. b. ex. brut,3,8062.0,10077.5,disponible
+35,38,dist. centenario,stella x473,24,1250.0,1562.5,disponible
+36,39,dist. centenario,corona x330,24,1584.0,1980.0,disponible
+37,300,vinos SA,vino tinto,1,500.0,200.0,disponible
+38,4000,vinos SA,vino blanco,2,300.0,700.0,disponible
+39,123,123,123,0,100.0,200.0,disponible

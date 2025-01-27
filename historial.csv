@@ -1,0 +1,3 @@
+fecha,vendedor,concepto,codigo,monto,movimiento,cantidad,detalle,proveedor
+2025-01-27,admin,123,123,100.0,nuevo ingreso,1,,123
+2025-01-27,admin,123,123,-100.0,perdida,-1,,123
