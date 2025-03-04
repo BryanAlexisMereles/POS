@@ -1,6 +1,13 @@
 import streamlit as st
 import sqlite3
 import pandas as pd
+import login
+if not('usuario' in st.session_state):
+    st.switch_page('inicio.py')
+
+login.generarLogin()
+
+
 
 # Función para conectar a la base de datos SQLite
 def get_db_connection():
@@ -12,7 +19,7 @@ conn = get_db_connection()
 
 
 # Título de la app
-st.title("CRUD Básico con SQLite")
+st.title("Ingreso de productos a stock")
 
 # Crear un nuevo cliente
 st.subheader("Agregar")
@@ -41,3 +48,21 @@ conn = get_db_connection()
 df = pd.read_sql("SELECT * FROM stock", conn)
 conn.close()
 st.dataframe(df)
+
+'''
+#actualizar datos
+UPDATE clientes 
+SET nombre = 'Carlos', 
+    apellido = 'Gómez', 
+    numero_cliente = 1002
+WHERE id = 1;
+
+#eliminar datos
+DELETE FROM clientes WHERE id = 1;
+
+#busqueda en base a una columna
+SELECT * FROM clientes WHERE apellido LIKE '%Pérez%';
+
+
+
+'''
