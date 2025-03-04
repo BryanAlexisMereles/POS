@@ -3,13 +3,17 @@ import pandas as pd
 from datetime import date
 import login
 
+# Inicialización del login
+login.generarLogin()
+st.title('en desarrollo!')
+
+'''
 # Rutas de los archivos
 PATH_HISTORIAL = "historial.csv"
 PATH_STOCK = "stock.csv"
 PATH_AGOTADO = "agotado.csv"
 
-# Inicialización del login
-login.generarLogin()
+
 
 # Inicialización de claves de sesión
 if "historial" not in st.session_state:
@@ -131,3 +135,4 @@ else:
 with st.sidebar:
     if st.button("Mostrar balance"):
         balance()
+'''

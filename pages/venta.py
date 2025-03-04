@@ -1,9 +1,12 @@
 import streamlit as st
 import pandas as pd
 import login
+login.generarLogin()
+st.title('en desarrollo!')
+'''
 import pages.historial as historial
 # Configuración inicial
-login.generarLogin()
+
 PATH = "stock.csv"
 PATH_HISTORIAL = "historial.csv"
 
@@ -211,3 +214,4 @@ if __name__ == "__main__":
         show_editar_page()
     else:
         main_page()
+'''

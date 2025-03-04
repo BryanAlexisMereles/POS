@@ -1,9 +1,14 @@
 import streamlit as st
 import login
+login.generarLogin()
+st.title('en desarrollo!')
+
+
+'''
 import pages.historial as historial
 import pandas as pd
 
-login.generarLogin()
+
 
 PATH = "stock.csv"
 PATH_AGOTADO = "agotado.csv"
@@ -244,3 +249,4 @@ if st.session_state["page"] == "lista":
                 st.rerun()
 if st.session_state["page"] == "editar":
     show_editar_page()
+'''

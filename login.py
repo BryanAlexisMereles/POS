@@ -51,20 +51,17 @@ def validarUsuario(usuario, clave):
         st.error(f"Error al validar usuario: {e}")
         return False
 
-def generarMenu(usuario):
+def generarMenu():
     """
     Genera el menú en la barra lateral dependiendo del usuario.
     :param usuario: Usuario autenticado
     """
     with st.sidebar:
         try:
-            conn = get_db_connection()
-            cursor = conn.cursor()
-            cursor.execute("SELECT nombre FROM usuarios WHERE usuario = ?", (usuario,))
-            conn.close()
             st.page_link("pages/venta.py", label="venta", icon=":material/sell:")
             st.page_link("pages/ingreso.py", label="ingreso", icon=":material/sell:")
             st.page_link("pages/historial.py", label="historial", icon=":material/sell:")
+            st.page_link("pages/nuevo.py", label="nuevo", icon=":material/sell:")
 
             # Botón de cierre de sesión
             if st.button("Salir", key='salir'):
@@ -82,7 +79,7 @@ def generarLogin():
     init_db()
 
     if 'usuario' in st.session_state:
-        generarMenu(st.session_state['usuario'])  # Muestra el menú si ya está autenticado
+        generarMenu()  # Muestra el menú si ya está autenticado
     else:
         with st.form(f"frmLogin_{id(generarLogin)}"):  # Clave única usando `id()` de la función
             st.subheader("Iniciar Sesión")
